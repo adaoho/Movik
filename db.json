@@ -29,7 +29,44 @@
       "password": "12345678"
     }
   ],
-  "wishlist": [],
+  "wishlist": [
+    {
+      "userId": { "$oid": "656ff4d9b1d36cb19622ecec" },
+      "productId": { "$oid": "656ff50fb1d36cb196231279" },
+      "createdAt": "2023-11-22 19:27:54.037 +0700",
+      "updatedAt": "2023-11-22 19:27:54.037 +0700"
+    },
+    {
+      "userId": { "$oid": "656ff4d9b1d36cb19622ecec" },
+      "productId": { "$oid": "656ff50fb1d36cb19623127a" },
+      "createdAt": "2023-11-22 19:27:54.037 +0700",
+      "updatedAt": "2023-11-22 19:27:54.037 +0700"
+    },
+    {
+      "userId": { "$oid": "656ff4d9b1d36cb19622ecec" },
+      "productId": { "$oid": "656ff50fb1d36cb19623127d" },
+      "createdAt": "2023-11-22 19:27:54.037 +0700",
+      "updatedAt": "2023-11-22 19:27:54.037 +0700"
+    },
+    {
+      "userId": { "$oid": "656ff4d9b1d36cb19622ecef" },
+      "productId": { "$oid": "656ff50fb1d36cb196231280" },
+      "createdAt": "2023-11-22 19:27:54.037 +0700",
+      "updatedAt": "2023-11-22 19:27:54.037 +0700"
+    },
+    {
+      "userId": { "$oid": "656ff4d9b1d36cb19622ecef" },
+      "productId": { "$oid": "656ff50fb1d36cb196231284" },
+      "createdAt": "2023-11-22 19:27:54.037 +0700",
+      "updatedAt": "2023-11-22 19:27:54.037 +0700"
+    },
+    {
+      "userId": { "$oid": "656ff4d9b1d36cb19622ecef" },
+      "productId": { "$oid": "656ff50fb1d36cb196231287" },
+      "createdAt": "2023-11-22 19:27:54.037 +0700",
+      "updatedAt": "2023-11-22 19:27:54.037 +0700"
+    }
+  ],
   "products": [
     {
       "name": "Kabel Charger Anker USB-A to USB-C 3ft - A81H5",
