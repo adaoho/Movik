@@ -3,6 +3,7 @@ import {
   CarouselMT,
   Typography,
 } from "@/components/MaterialTailwind";
+import Link from "next/link";
 import React from "react";
 
 const CaraouselMT = () => {
@@ -22,31 +23,33 @@ const CaraouselMT = () => {
                 color="white"
                 className="mb-4 text-3xl md:text-4xl lg:text-5xl"
               >
-                Find All The Best
+                Immerse Yourself in Pure Sound
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-12 opacity-80"
+                className="mb-12 opacity-80 w-[70%]"
               >
-                It is not so much for its beauty that the forest makes a claim
-                upon men&apos;s hearts, as for that subtle something
+                Experience audio like never before with our cutting-edge
+                headphones. Immerse yourself in a world of pure sound.
               </Typography>
               <div className="flex gap-x-8 flex-row">
-                <ButtonMT
-                  size="lg"
-                  className="bg-[#6b6b6b] hover:bg-orange-900 transition-all"
-                >
-                  Shop Now
-                </ButtonMT>
+                <Link href={"/products"}>
+                  <ButtonMT
+                    size="lg"
+                    className="bg-[#6b6b6b] hover:bg-orange-900 transition-all"
+                  >
+                    Shop Now
+                  </ButtonMT>
+                </Link>
                 <div className="flex flex-row gap-x-4">
                   <div className="flex flex-col items-center">
-                    <h1 className="text-[20px] font-bold">20k+</h1>
+                    <h1 className="text-[20px] font-bold">10k+</h1>
                     <p className="text-[13px]">Product Review</p>
                   </div>
                   <div className="divider">|</div>
                   <div className="flex flex-col items-center">
-                    <h1 className="text-[20px] font-bold">10k+</h1>
+                    <h1 className="text-[20px] font-bold">30k+</h1>
                     <p className="text-[13px]">Best Rating</p>
                   </div>
                 </div>
@@ -67,31 +70,34 @@ const CaraouselMT = () => {
                 color="white"
                 className="mb-4 text-3xl md:text-4xl lg:text-5xl"
               >
-                Find All The Best
+                Comfort, All-Day Long
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-12 opacity-80"
+                className="mb-12 opacity-80 w-[70%]"
               >
-                It is not so much for its beauty that the forest makes a claim
-                upon men&apos;s hearts, as for that subtle something
+                Discover a new level of comfort with our headphones. Designed
+                for extended wear, our plush ear cushions and lightweight build
+                ensure a luxurious experience.
               </Typography>
               <div className="flex gap-x-8 flex-row">
-                <ButtonMT
-                  size="lg"
-                  className="bg-[#6b6b6b] hover:bg-orange-900 transition-all"
-                >
-                  Shop Now
-                </ButtonMT>
+                <Link href={"/products"}>
+                  <ButtonMT
+                    size="lg"
+                    className="bg-[#6b6b6b] hover:bg-orange-900 transition-all"
+                  >
+                    Shop Now
+                  </ButtonMT>
+                </Link>
                 <div className="flex flex-row gap-x-4">
                   <div className="flex flex-col items-center">
-                    <h1 className="text-[20px] font-bold">20k+</h1>
+                    <h1 className="text-[20px] font-bold">10k+</h1>
                     <p className="text-[13px]">Product Review</p>
                   </div>
                   <div className="divider">|</div>
                   <div className="flex flex-col items-center">
-                    <h1 className="text-[20px] font-bold">10k+</h1>
+                    <h1 className="text-[20px] font-bold">30k+</h1>
                     <p className="text-[13px]">Best Rating</p>
                   </div>
                 </div>
@@ -112,31 +118,33 @@ const CaraouselMT = () => {
                 color="white"
                 className="mb-4 text-3xl md:text-4xl lg:text-5xl"
               >
-                Find All The Best
+                Wireless, Effortless Style
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-12 opacity-80"
+                className="mb-12 opacity-80 w-[70%]"
               >
-                It is not so much for its beauty that the forest makes a claim
-                upon men&apos;s hearts, as for that subtle something
+                Cut the cords and embrace freedom with our wireless headphones.
+                Effortlessly stylish and technologically advanced.
               </Typography>
               <div className="flex gap-x-8 flex-row">
-                <ButtonMT
-                  size="lg"
-                  className="bg-[#6b6b6b] hover:bg-orange-900 transition-all"
-                >
-                  Shop Now
-                </ButtonMT>
+                <Link href={"/products"}>
+                  <ButtonMT
+                    size="lg"
+                    className="bg-[#6b6b6b] hover:bg-orange-900 transition-all"
+                  >
+                    Shop Now
+                  </ButtonMT>
+                </Link>
                 <div className="flex flex-row gap-x-4">
                   <div className="flex flex-col items-center">
-                    <h1 className="text-[20px] font-bold">20k+</h1>
+                    <h1 className="text-[20px] font-bold">5k+</h1>
                     <p className="text-[13px]">Product Review</p>
                   </div>
                   <div className="divider">|</div>
                   <div className="flex flex-col items-center">
-                    <h1 className="text-[20px] font-bold">10k+</h1>
+                    <h1 className="text-[20px] font-bold">6k+</h1>
                     <p className="text-[13px]">Best Rating</p>
                   </div>
                 </div>

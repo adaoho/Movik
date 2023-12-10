@@ -5,6 +5,10 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import React from "react";
 
+// API untuk loginnya diselesaikan dulu
+// Get The Token
+// Then Middleware Authentication
+
 const LoginPage = () => {
   const onSubmitLogin = async (formData: FormData) => {
     "use server";

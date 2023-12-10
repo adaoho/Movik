@@ -25,12 +25,35 @@ export type ProductModel = {
   updatedAt: string;
 };
 
-export const findAllProduct = async () => {
+export const findAllProduct = async ({
+  page = 1,
+  limit = 8,
+}: {
+  page?: number;
+  limit?: number;
+}) => {
+  try {
+    const skip = (page - 1) * limit;
+    const db = await mongoDb();
+    const result = (await db
+      .collection(COLLECTION_NAME)
+      .find()
+      .limit(limit)
+      .skip(skip)
+      .toArray()) as ProductModel[];
+
+    // Cara bruthforce pake as
+    return result;
+  } catch (error) {
+    return error;
+  }
+};
+
+export const findProductBySlug = async (slug: string) => {
   const db = await mongoDb();
   const result = (await db
     .collection(COLLECTION_NAME)
-    .find()
-    .toArray()) as ProductModel[];
+    .findOne({ slug: slug })) as ProductModel;
 
   return result;
 };

@@ -5,7 +5,7 @@ export type ProductType = {
   description: string;
   excerpt: string;
   price: string;
-  tag: string[];
+  tags: string[];
   thumbnail: string[];
   images: string[];
   createdAt: string;
@@ -34,4 +34,14 @@ export type ProductModel = {
 
 export type ComponentClassType = {
   className: string;
+};
+
+export type ProductsPageType = {
+  _id: string;
+  name: string;
+  price: string;
+  images: string[];
+  excerpt: string;
+  slug: string;
+  thumbnail: string[];
 };

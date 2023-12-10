@@ -1,9 +1,9 @@
 import { findAllProduct } from "@/db/models/product";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 export const GET = async () => {
   try {
-    const products = await findAllProduct();
+    const products = await findAllProduct({ page: 1, limit: 8 });
 
     return NextResponse.json(
       {

@@ -5,8 +5,8 @@ import Link from "next/link";
 const NavbarComp = () => {
   return (
     <>
-      <div className="flex w-[100dvw] items-center justify-center bg-gray-100">
-        <div className="w-[92%] h-[105px] flex px-12 justify-between items-center text-gray-500 flex-row">
+      <div className="fixed flex z-20 w-[100dvw] items-center justify-center bg-gray-100">
+        <div className="w-[92%] h-[75px] flex px-12 justify-between items-center text-gray-500 flex-row">
           {/* Logo */}
           <div className="flex justify-start items-center w-[150px]">
             <Image
@@ -23,18 +23,30 @@ const NavbarComp = () => {
           {/* Navbar */}
           <div className="flex flex-col justify-start items-start w-[1000px] pl-[2%] gap-y-2 text-[14px]">
             <div className="flex-row flex gap-x-6 group ">
-              <p className="relative w-fit block hover:text-orange-900 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-900 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+              <Link
+                href={"/"}
+                className="relative w-fit block hover:text-orange-900 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-900 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+              >
                 Home
-              </p>
-              <p className="relative w-fit block hover:text-orange-900 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-900 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+              </Link>
+              <Link
+                href={"/products"}
+                className="relative w-fit block hover:text-orange-900 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-900 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+              >
                 Product
-              </p>
-              <p className="relative w-fit block hover:text-orange-900 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-900 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+              </Link>
+              <Link
+                href={"/wishlist"}
+                className="relative w-fit block hover:text-orange-900 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-900 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+              >
                 Wishlist
-              </p>
-              <p className="relative w-fit block hover:text-orange-900 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-900 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+              </Link>
+              <Link
+                href={"/about"}
+                className="relative w-fit block hover:text-orange-900 after:block after:content-[''] after:absolute after:h-[2px] after:bg-orange-900 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
+              >
                 About
-              </p>
+              </Link>
             </div>
           </div>
 

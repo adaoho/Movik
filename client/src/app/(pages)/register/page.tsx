@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+// API Register diselesaikan dulu
+
 const RegisterPage = () => {
   const onSubmitRegister = async (formData: FormData) => {
     "use server";

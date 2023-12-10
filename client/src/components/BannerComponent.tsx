@@ -4,7 +4,7 @@ const BannerComponent = () => {
   return (
     <>
       {/* Banner Start */}
-      <div className="flex flex-row w-[85%] h-[80%] rounded-2xl relative shadow-lg">
+      <div className="flex flex-row w-[86%] h-[80%] rounded-2xl relative shadow-lg">
         <img
           src="https://source.unsplash.com/random/900×900/?headphones-black"
           className="object-cover w-[100%] h-[100%] rounded-2xl"

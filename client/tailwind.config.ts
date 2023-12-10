@@ -18,7 +18,6 @@ const config: Config = withMT({
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["light"],
     logs: false,
   },
 });
